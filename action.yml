@@ -35,6 +35,8 @@ runs:
 
     - run: |
         docker run --rm \
+          --dns 8.8.8.8 \
+          --dns 1.1.1.1 \
           --env BUILD_LOG \
           --env EXTRA_FEEDS \
           --env FEEDNAME \
